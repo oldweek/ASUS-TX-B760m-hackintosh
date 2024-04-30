@@ -2,11 +2,13 @@
 
 # 主板型号
 TX GAMING B760M，EFI支持 ddr4/ddr5版本
+
+关键字：`华硕 天选B730M 黑苹果`，`TX-B760m-Hackintosh`，`TX GAMING B760M WIFI`；
+
 <img src="images/tx-b760m.jpg" width=70%>
 
 ## opencore : 0.9.9 版本
 ![oc-0.9.9](images/oc099.png)
-
 ## 支持系统：
 1. macOS Sonoma 14
 2. macOS Ventura 13
