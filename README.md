@@ -50,13 +50,13 @@ TX GAMING B760M，EFI支持 ddr4/ddr5版本
 
 1. 主板自带网卡驱动信息
 因 Sonoma 14 以后，免驱动苹果网卡无法使用，且只支持Wi-Fi5，使用Wi-Fi 6 自带网卡速率更快
-![Wi-Fi](assets/Wi-Fi.png)
-内置网卡可以跑满 2400Mbps传输速率
-![Wi-Fi-2](assets/Wi-Fi-2.png)
+![Wi-Fi](images/Wi-Fi.png)
+内置无线网卡可以跑满 2400Mbps传输速率
+![Wi-Fi-2](images/Wi-Fi-2.png)
 
 2. ACPI信息
 如果你是免驱动显卡，可以去掉 SSDT-RX6650XT-TXB760-PC00-PEG1.aml 文件
 如果你是仿冒显卡，不同型号，可以使用hackintosh工具中的pcie找到显卡路径
-![acpi](assets/acpi.png)
+![acpi](images/acpi.png)
 3. cpu核心能够正确识别成 16核心 24个线程
-![cpu-core](assets/cpu-core.png)
+![cpu-core](images/cpu-core.png)
