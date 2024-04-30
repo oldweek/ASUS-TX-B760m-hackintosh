@@ -20,11 +20,14 @@ TX GAMING B760M，EFI支持 ddr4/ddr5版本
 4. 有线网卡速率2.5G
 5. 去除usb端口限制
 6. 已屏蔽核显，核显无法驱动，屏蔽后可以节能
+7. 睡眠唤醒正常使用
+8. 大小核补丁加入后，性能比未加入的要高很多
+9. 声音，麦克风正常使用
 
 ## 已知问题：
 1. 自带蓝牙目前没有驱动
 
-除该问题外，其他已经正常使用
+##### ⚠️ 除该问题外，其他已经正常使用
 
 ## bios设置
   VT-d ：Enabled		
@@ -42,3 +45,18 @@ TX GAMING B760M，EFI支持 ddr4/ddr5版本
 ## 使用教程：
 通过 [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools/releases) 工具 打开 菜单 PI 后，生成三码信息导入使用
 ![三码设置](images/smi.png)
+
+## 其他
+
+1. 主板自带网卡驱动信息
+因 Sonoma 14 以后，免驱动苹果网卡无法使用，且只支持Wi-Fi5，使用Wi-Fi 6 自带网卡速率更快
+![Wi-Fi](assets/Wi-Fi.png)
+内置网卡可以跑满 2400Mbps传输速率
+![Wi-Fi-2](assets/Wi-Fi-2.png)
+
+2. ACPI信息
+如果你是免驱动显卡，可以去掉 SSDT-RX6650XT-TXB760-PC00-PEG1.aml 文件
+如果你是仿冒显卡，不同型号，可以使用hackintosh工具中的pcie找到显卡路径
+![acpi](assets/acpi.png)
+3. cpu核心能够正确识别成 16核心 24个线程
+![cpu-core](assets/cpu-core.png)
