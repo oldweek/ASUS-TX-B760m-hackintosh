@@ -60,3 +60,4 @@ TX GAMING B760M，EFI支持 ddr4/ddr5版本
 ![acpi](images/acpi.png)
 3. cpu核心能够正确识别成 16核心 24个线程
 ![cpu-core](images/cpu-core.png)
+大小核处理器均能识别到正确的大小核并且调度
