@@ -1,3 +1,25 @@
+# 更新情况
+#### 2024-05-17 更新
+1. 原生本机Wifi，蓝牙支持
+2. 更新到opencore 1.0.0
+3. 支持最新 macOS 14.5版本
+4. EFI文件归类，不同系统根据分类使用
+5. 支持Apple DRM（支持无损格式，杜比）
+
+# EFI文件说明
+##### macOS 12 - 13 版本： macOS-Ventura 目录
+##### macOS 14.1 - 14.3.1版本：macOS-Sonoma-14.3.1up 目录
+##### macOS 14.4 - up 版本：macOS-Sonoma-14.4 目录
+
+#### 说明
+由于macOS14.4有相关变更，不能直接无痛升级
+需要将 Misc - Security - SecurityBootMode : Disabled
+
+无线网卡驱动也需要重新部署（目前制作的EFI已经可以直接使用）
+
+# macOS关于
+<img src="images/macOS-14.3.png" width=35%>
+
 <img src="images/info.jpg" width=35%>
 
 # 主板型号
@@ -27,18 +49,22 @@ TX GAMING B760M，EFI支持 ddr4/ddr5版本
 9. 声音，麦克风正常使用
 
 ## 已知问题：
-1. 自带蓝牙目前没有驱动
+~~1. 自带蓝牙目前没有驱动~~
+2，不能随航（需要该功能可以买免驱动网卡，14已不支持直接免驱）
 
-##### ⚠️ 除该问题外，其他已经正常使用
 
 ## bios设置
-  VT-d ：Enabled		
-  XHCI-Hand-Off ：Enabled
-  Above 4G Decoding ： Enabled		
-  Fast Boot	： Disabled
-  CSM	： Disabled		
-  Secure Boot ： Disabled
-  Resize Bar Support	： Enabled
+ 
+| Bios选项名         | 选项     | 必需 |
+|--------------------|----------|------|
+| VT-d               | Enabled  |      |
+| XHCI-Hand-Off      | Enabled  |      |
+| Above 4G Decoding  | Enabled  |      |
+| Fast Boot          | Disabled |      |
+| CSM                | Disabled |      |
+| Secure Boot        | Disabled |      |
+| Resize Bar Support | Enabled  |      |
+
 
 ## 加载 kext 信息
 ![加载的kext信息](images/kext.png)
