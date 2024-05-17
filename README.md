@@ -25,7 +25,7 @@
 # 主板型号
 TX GAMING B760M，EFI支持 ddr4/ddr5版本
 
-关键字：`华硕 天选B730M 黑苹果`，`TX-B760m-Hackintosh`，`TX GAMING B760M WIFI`；
+关键字：`华硕天选B760M黑苹果`，`TX B760m Hackintosh`，`TX GAMING B760M WIFI hackintosh`；
 
 <img src="images/tx-b760m.jpg" width=70%>
 
