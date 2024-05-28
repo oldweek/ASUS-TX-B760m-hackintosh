@@ -123,7 +123,7 @@ TX GAMING B760M，EFI支持 ddr4/ddr5版本
 3. macOS Monterey 12.0 -> 12.最新
 
 # 使用教程：
-通过 [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools/releases) 工具 打开 菜单 PI 后，生成三码信息导入使用
+通过 [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools/releases) 工具 打开 config文件后，进入到 PI 后，生成三码信息导入使用
 ![三码设置](images/smi.png)
 ## bios设置
  
