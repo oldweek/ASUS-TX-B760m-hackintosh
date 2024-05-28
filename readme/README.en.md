@@ -6,12 +6,19 @@ Feel free to correct me if the description is incorrect.
 
 # 目录
 [Updated Description](#%20Updated%20Description)
+
 [EFI Files Description](#%20EFI%20Files%20Description)
+
 [macOS About](#%20macOS%20About)
+
 [Motherboard Model](#%20Motherboard%20Model)
+
 [Guidelines for use](#%20Guidelines%20for%20use)
+
 [Others](#%20Others)
+
 [Solution Difficulties](#%20Solution%20Difficulties)
+
 [Acknowledgement](#%20Acknowledgement)
 
 # Updated Description
