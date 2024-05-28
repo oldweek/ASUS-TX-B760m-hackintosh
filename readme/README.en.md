@@ -129,6 +129,7 @@ Keywords：`TX B760m Hackintosh`，`TX GAMING B760M WIFI hackintosh`；
 ![SMI codes](../images/smi.png)
 #### Using opencore configure also works
 ![occonfig](../images/occonfig.png)
+#### The hackintool tool can also be used to generate SMI code messages
 
 ## BIOS Settings
  
