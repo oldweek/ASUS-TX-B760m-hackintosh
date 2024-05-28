@@ -99,7 +99,7 @@
     SHA256SUM：包内
 
 ##### 2.macOSdmg安装包
-* macOS Venture 13.5.1 22G90 With opencore 1.9.4 and WinPE
+* macOS Venture 13.5.1 22G90 With opencore 0.9.4 and WinPE
 
     链接: https://pan.baidu.com/s/1rq-Q5e3-my8gZUX3oZS_Ng?pwd=rv49 
 
