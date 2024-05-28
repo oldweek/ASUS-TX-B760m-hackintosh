@@ -78,17 +78,17 @@ macOS 14.4 - up 版本：macOS-Sonoma-14.4 目录
 
 #### 🆓相关资源：
 ##### 1.macOSpkg升级包
-macOS Sonoma 14.5 (23F79) - 推荐版本
+* macOS Sonoma 14.5 (23F79) - 推荐版本
 链接: https://pan.baidu.com/s/1DQ9vFTQPSUv7Xg-wMDT6hg?pwd=4qxa 
 提取码: 4qxa 
 SHA256SUM：包内
 
-macOS Sonoma 14.3.1 (23D60)
-链接: https://pan.baidu.com/s/1_bTx8A4GdBfaLCLUEh4YzA?pwd=bt4j 
+* macOS Sonoma 14.3.1 (23D60)
+链接: https://pan.baidu.com/s/1_bTx8A4GdBfaLCLUEh4YzA?pwd=bt4j
 提取码: bt4j 
 SHA256SUM：包内
 ##### 2.macOSdmg安装包
-macOS Venture 13.5.1 22G90 With opencore 1.9.4 and WinPE
+* macOS Venture 13.5.1 22G90 With opencore 1.9.4 and WinPE
 链接: https://pan.baidu.com/s/1rq-Q5e3-my8gZUX3oZS_Ng?pwd=rv49 
 提取码: rv49 
 
