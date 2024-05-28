@@ -127,7 +127,7 @@ Keywords：`TX B760m Hackintosh`，`TX GAMING B760M WIFI hackintosh`；
 # Guidelines for use
 #### Opening the EFI config file through [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools/releases), generate SMI codes after click the PI.
 ![SMI codes](../images/smi.png)
-#### Using opencore configure also works
+#### Using opencore configurator also works
 ![occonfig](../images/occonfig.png)
 #### The hackintool tool can also be used to generate SMI code messages
 
@@ -172,7 +172,7 @@ Dual screen 4k, playback of video and audio and office use status
 ### Why is the sequence of parameters in there reversed, for example, if we see 11 22 33, the input to the system is going to be 33 22 11?
 This is due to the fact that the dominant operating systems today use the: little-endian
 > refer：big-endian and little-endian
-> 
+ 
 
 # Acknowledgement
 1. [opencore](https://github.com/acidanthera/OpenCorePkg)
@@ -181,3 +181,5 @@ This is due to the fact that the dominant operating systems today use the: littl
 4. [itlwm](https://github.com/OpenIntelWireless/itlwm)
 5. [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild)
 6. [LucyRTL8125Ethernet](https://github.com/Mieze/LucyRTL8125Ethernet)
+7. [Hackintool](https://github.com/benbaker76/Hackintool)
+8. [opencore-configurator](https://mackie100projects.altervista.org/opencore-configurator/)

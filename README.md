@@ -129,7 +129,7 @@ TX GAMING B760M，EFI支持 ddr4/ddr5版本
 # 使用教程：
 #### 通过 [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools/releases) 工具 打开 config文件后，进入到 PI 后，生成三码信息导入使用
 ![三码设置](images/smi.png)
-#### 使用 opencore configure 修改三码信息也同样可以
+#### 使用 opencore configurator 修改三码信息也同样可以
 ![occonfig](images/occonfig.png)
 #### 通过 hackintool 工具也可以生成三码信息
 
@@ -182,3 +182,5 @@ TX GAMING B760M，EFI支持 ddr4/ddr5版本
 4. [itlwm](https://github.com/OpenIntelWireless/itlwm)
 5. [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild)
 6. [LucyRTL8125Ethernet](https://github.com/Mieze/LucyRTL8125Ethernet)
+7. [Hackintool](https://github.com/benbaker76/Hackintool)
+8. [opencore-configurator](https://mackie100projects.altervista.org/opencore-configurator/)
