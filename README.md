@@ -67,7 +67,7 @@ macOS 14.4 - up 版本：macOS-Sonoma-14.4 目录
 1. macOS 14.4.1 ： [包含 Java 代码的某些应用程序会意外退出｜影响icoud｜生产力不推荐]
 
 ##### 🔝推荐的系统版本：
-1. Ventura 13.5.1
+1. Ventura 13.5.1(有小版本更新直接升级)
 2. Sonoma 14.3.1
 3. Sonoma 14.5
 
