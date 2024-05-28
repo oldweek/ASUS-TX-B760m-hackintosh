@@ -1,7 +1,6 @@
 # README.md
-- en [English](README.en.md)
+- en [English](readme/README.en.md)
 - zh_CN [简体中文](README.md)
-- zh_TW [繁体中文](README.zh_TCC.md)
 
 # 更新情况
 #### 2024-05-17 更新
@@ -80,7 +79,7 @@
 2. Sonoma 14.3.1
 3. Sonoma 14.5
 
-##### ⏩如何在线升级：
+##### ⏩如何升级：
 1. 小版本升级：可以直接在系统设置 直接更新
 2. 大版本升级 推荐：使用 pkg 对应版本的升级包升级
 3. 大版本升级：下载对应 dmg 系统包，打开以后有一个安装进行升级
@@ -132,7 +131,7 @@ TX GAMING B760M，EFI支持 ddr4/ddr5版本
 ![三码设置](images/smi.png)
 ## bios设置
  
-| Bios选项名         | 选项     | 必需 |
+| Bios选项名          | 选项      | 必需 |
 |--------------------|----------|------|
 | VT-d               | Enabled  |      |
 | XHCI-Hand-Off      | Enabled  |      |
@@ -155,7 +154,7 @@ TX GAMING B760M，EFI支持 ddr4/ddr5版本
 如果你是免驱动显卡，可以去掉 SSDT-RX6650XT-TXB760-PC00-PEG1.aml 文件
 如果你是仿冒显卡，不同型号，可以使用hackintosh工具中的pcie找到显卡路径
 ![acpi](images/acpi.png)
-3. cpu核心能够正确识别成 16核心 24个线程
+3. cpu核心能够正确识别成 16核心 24个线程（大核心，小核心，线程。其他处理器同样支持）
 ![cpu-core](images/cpu-core.png)
 大小核处理器均能识别到正确的大小核并且调度
 ![cpu-core](images/p+e.png)
@@ -171,3 +170,11 @@ TX GAMING B760M，EFI支持 ddr4/ddr5版本
 ### 为什么里面参数的序列是反过来的，比如我们看到的 11 22 33，输入到系统要变成 33 22 11 ？
 这是因为目前主流的操作系统都采用: 小端模式
 > 参考：大端模式（big-endian）与小端模式（little-endian）
+
+# 鸣谢
+1. [opencore](https://github.com/acidanthera/OpenCorePkg)
+2. [Acidanthera and all kext developer for hackintosh](https://github.com/acidanthera)
+3. [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools/releases)
+4. [itlwm](https://github.com/OpenIntelWireless/itlwm)
+5. [CpuTopologyRebuild](https://github.com/b00t0x/CpuTopologyRebuild)
+6. [LucyRTL8125Ethernet](https://github.com/Mieze/LucyRTL8125Ethernet)
