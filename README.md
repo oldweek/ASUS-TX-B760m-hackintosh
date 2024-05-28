@@ -20,12 +20,16 @@
 
 ##### 已知问题：
 ~~1. 自带蓝牙目前没有驱动 已解决~~
+
 2，不能随航（需要该功能可以买免驱动网卡，14已不支持直接免驱）
 
 # EFI文件说明
-macOS 12 - 13 版本： macOS-Ventura 目录
-macOS 14.1 - 14.3.1版本：macOS-Sonoma-14.3.1up 目录
-macOS 14.4 - up 版本：macOS-Sonoma-14.4 目录
+    
+    macOS 12 - 13 版本： macOS-Ventura 目录
+
+    macOS 14.1 - 14.3.1版本：macOS-Sonoma-14.3.1up 目录
+
+    macOS 14.4 - up 版本：macOS-Sonoma-14.4 目录
 
 #### 说明
 由于macOS14.4有相关变更，不能直接无痛升级
@@ -38,27 +42,27 @@ macOS 14.4 - up 版本：macOS-Sonoma-14.4 目录
     <tr>
         <td>
             <img src="images/info.jpg" border=0 style="margin-top:0px;">
-            EFI：macOS-Ventura/EFI
+<!--            EFI：macOS-Ventura/EFI
             <br/>
             升级：小版本直接升级，大版本升级到14.3.1最高
             <br/>
-            ⚠️需要将无线网卡升级到14.0版本
+            ⚠️需要将无线网卡升级到14.0版本-->
         </td>
         <td>
             <img src="images/macOS-14.3.png" border=0 style="margin-top:0px;">
-            EFI：macOS-Sonoma-14.3.1up/EFI
+<!--            EFI：macOS-Sonoma-14.3.1up/EFI
             <br/>
             升级：14.0 - 14.3.1 之间任意版本使用，蓝牙以及无线已经更新到14.0版本
             <br/>
             ⚠️升级14.4以及以上版本需配置EFI：·Misc - Security - SecurityBootMode : Disabled·
             <br/>
-            ⚠️需要将无线网卡升级到14.4版本
+            ⚠️需要将无线网卡升级到14.4版本-->
         </td>
         <td>
             <img src="images/macOS-14.5.png" border=0 style="margin-top:0px;">
-            EFI：macOS-Sonoma-14.4/EFI
+           <!-- EFI：macOS-Sonoma-14.4/EFI
             <br/>
-            14.4-目前最新版本14.5之间版本可以任意升级，已经更新了蓝牙和无线网卡驱动到最新版本，并且已经处理好SecurityBootMode，更新nvmefix支持到14.5
+            14.4-目前最新版本14.5之间版本可以任意升级，已经更新了蓝牙和无线网卡驱动到最新版本，并且已经处理好SecurityBootMode，更新nvmefix支持到14.5-->
         </td>
     </tr>
 </table>
@@ -113,9 +117,10 @@ TX GAMING B760M，EFI支持 ddr4/ddr5版本
 ## opencore : 0.9.9 版本
 ![oc-0.9.9](images/oc099.png)
 ## 支持系统：
-1. macOS Sonoma 14
-2. macOS Ventura 13
-3. macOS Monterey 12
+1. macOS Soname 14.4 -> 最新
+1. macOS Sonoma 14.0 -> 14.3.1
+2. macOS Ventura 13.0 -> 13.最新
+3. macOS Monterey 12.0 -> 12.最新
 
 # 使用教程：
 通过 [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools/releases) 工具 打开 菜单 PI 后，生成三码信息导入使用
