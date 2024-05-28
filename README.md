@@ -1,6 +1,6 @@
 # README.md
-- en [English](readme/README.en.md)
-- zh_CN [简体中文](README.md)
+- [English](readme/README.en.md)
+- [简体中文](README.md)
 
 # 更新情况
 #### 2024-05-17 更新

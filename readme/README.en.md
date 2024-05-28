@@ -1,6 +1,6 @@
 # README.md
-- en [English](readme/README.en.md)
-- zh_CN [简体中文](README.md)
+- [English](readme/README.en.md)
+- [简体中文](README.md)
 
 Feel free to correct me if the description is incorrect.
 
@@ -153,7 +153,7 @@ This is due to the fact that the dominant operating systems today use the: littl
 > refer：big-endian and little-endian
 > 
 
-# acknowledgement
+# Acknowledgement
 1. [opencore](https://github.com/acidanthera/OpenCorePkg)
 2. [Acidanthera and all kext developer for hackintosh](https://github.com/acidanthera)
 3. [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools/releases)
