@@ -5,21 +5,21 @@
 Feel free to correct me if the description is incorrect.
 
 # 目录
-[Updated Description](#%20Updated%20Description)
+[Updated Description](#Updated-Description)
 
-[EFI Files Description](#%20EFI%20Files%20Description)
+[EFI Files Description](#%EFI-Files-Description)
 
-[macOS About](#%20macOS%20About)
+[macOS About](#macOS-About)
 
-[Motherboard Model](#%20Motherboard%20Model)
+[Motherboard Model](#Motherboard-Model)
 
-[Guidelines for use](#%20Guidelines%20for%20use)
+[Guidelines for use](#Guidelines%20for%20use)
 
-[Others](#%20Others)
+[Others](#Others)
 
-[Solution Difficulties](#%20Solution%20Difficulties)
+[Solution Difficulties](#Solution-Difficulties)
 
-[Acknowledgement](#%20Acknowledgement)
+[Acknowledgement](#Acknowledgement)
 
 # Updated Description
 #### 2024-05-17 Update
