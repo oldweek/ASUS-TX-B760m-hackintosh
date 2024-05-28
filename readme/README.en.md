@@ -13,7 +13,7 @@ Feel free to correct me if the description is incorrect.
 
 [Motherboard Model](#Motherboard-Model)
 
-[Guidelines for use](#Guidelines%20for%20use)
+[Guidelines for use](#Guidelines-for-use)
 
 [Others](#Others)
 
