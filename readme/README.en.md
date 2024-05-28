@@ -4,6 +4,16 @@
 
 Feel free to correct me if the description is incorrect.
 
+# 目录
+[Updated Description](#%20Updated%20Description)
+[EFI Files Description](#%20EFI%20Files%20Description)
+[macOS About](#%20macOS%20About)
+[Motherboard Model](#%20Motherboard%20Model)
+[Guidelines for use](#%20Guidelines%20for%20use)
+[Others](#%20Others)
+[Solution Difficulties](#%20Solution%20Difficulties)
+[Acknowledgement](#%20Acknowledgement)
+
 # Updated Description
 #### 2024-05-17 Update
 1. Native Wifi, Bluetooth support.
@@ -107,7 +117,7 @@ Keywords：`TX B760m Hackintosh`，`TX GAMING B760M WIFI hackintosh`；
 2. macOS Ventura 13.0 -> 13.latest
 3. macOS Monterey 12.0 -> 12.latest
 
-# Guidelines for use：
+# Guidelines for use
 Opening the EFI config file through [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools/releases), generate SMI codes after click the PI.
 ![SMI codes](../images/smi.png)
 ## BIOS Settings
