@@ -125,8 +125,11 @@ Keywords：`TX B760m Hackintosh`，`TX GAMING B760M WIFI hackintosh`；
 3. macOS Monterey 12.0 -> 12.latest
 
 # Guidelines for use
-Opening the EFI config file through [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools/releases), generate SMI codes after click the PI.
+#### Opening the EFI config file through [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools/releases), generate SMI codes after click the PI.
 ![SMI codes](../images/smi.png)
+#### Using opencore configure also works
+![occonfig](../images/occonfig.png)
+
 ## BIOS Settings
  
 | BIOS Option Name   | options  | required |

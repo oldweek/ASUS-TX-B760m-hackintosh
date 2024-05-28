@@ -129,6 +129,8 @@ TX GAMING B760M，EFI支持 ddr4/ddr5版本
 # 使用教程：
 通过 [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools/releases) 工具 打开 config文件后，进入到 PI 后，生成三码信息导入使用
 ![三码设置](images/smi.png)
+
+![occonfig](images/occonfig.png)
 ## bios设置
  
 | Bios选项名          | 选项      | 必需 |
