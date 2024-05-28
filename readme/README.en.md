@@ -7,7 +7,7 @@ Feel free to correct me if the description is incorrect.
 # 目录
 [Updated Description](#Updated-Description)
 
-[EFI Files Description](#%EFI-Files-Description)
+[EFI Files Description](#EFI-Files-Description)
 
 [macOS About](#macOS-About)
 
