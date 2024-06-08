@@ -2,15 +2,109 @@
 - [English](readme/README.en.md)
 - [简体中文](README.md)
 
-# 更新情况
-#### 2024-05-17 更新
+最近更新：
+2024年6月8日，更新简要：整合多个版本无线网卡，增加仿冒显卡支持
+
+文档版本号：v1.0.0u01-d01
+
+------------------------------------------------------
+
+# 目录
+
+1. [主板型号](#1.主板型号)
+    1.1. [EFI支持的macOS版本](#1.1.EFI支持的macOS版本)
+2. [使用教程](#2.使用教程)
+    2.1. [设置bios](#2.1.使用教程-第一步:设置BIOS)
+    2.2. [配置三码信息](#2.2.使用教程-第二步:配置三码信息)
+3. [更新记录](#3.更新记录)
+4. [已知问题](#4.已知问题)
+5. [macOS关于](#5.macOS关于)
+6. [相关资源](#6.相关资源)
+    6.1. [macOS升级包下载](#6.1.macOS升级包下载)
+    6.2. [macOS 13.5.1 镜像包下载](#6.2.macOS-13.5.1-镜像包下载)
+    6.3. [推荐使用的系统](#6.3.推荐使用的系统)
+    6.4. [避免使用的版本](#6.4.避免使用的版本)
+    6.5. [如何升级版本](#6.5.如何升级版本)
+7. [展示的使用信息](#7.展示的使用信息)
+8. [其他](#8.其他)
+9. [疑难解答](#9.疑难解答)
+10. [鸣谢](#10.鸣谢)
+
+------------------------------------------------------
+
+# 1.主板型号
+
+支持主板型号：
+1. TX GAMING B760M WIFI D4
+2. TX GAMING B760M WIFI D5
+
+关键字：`华硕天选B760M黑苹果`，`TX B760m Hackintosh`，`TX GAMING B760M WIFI hackintosh`， `TX GAMING B760M WIFI D4`, `TX GAMING B760M WIFI D5`, `TX GAMING B760M 黑苹果`；
+
+<img src="images/tx-b760m.jpg" width=70%>
+
+## 1.1.EFI支持的macOS版本
+
+    EFI对Wi-Fi驱动程序进行了相关整合，根据内核版本控制驱动加载，集成到一个EFI可直接安装12-14区间版本
+    
+    EFI支持：macOS 12 - macOS 14.5（截稿最新）
+    
+    本EFI会跟随系统随时更新，尽情留意。
+
+------------------------------------------------------
+
+# 2.使用教程
+
+## 2.1.使用教程-第一步:设置BIOS
+
+⚠️ 在配置BIOS时，建议将bios恢复成出厂设置，再行设置
+
+|BIOS菜单路径| Bios选项名          | 选项      | 必需 |
+|-----------|--------------------|----------|------|
+|           | VT-d               | Enabled  |      |
+|           | XHCI-Hand-Off      | Enabled  |      |
+|           | Above 4G Decoding  | Enabled  |      |
+|           | Fast Boot          | Disabled |      |
+|           | CSM                | Disabled |      |
+|           | Secure Boot        | Disabled |      |
+|           | Resize Bar Support | Enabled  |      |
+
+
+## 2.2.使用教程-第二步:配置三码信息
+
+配置三码信息可用以下工具进行三选一（点击进入到相关软件下载）：
+1. [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools/releases)
+2. [opencore-configurator](https://mackie100projects.altervista.org/opencore-configurator/)
+3. [Hackintool](https://github.com/benbaker76/Hackintool)
+
+#### [🔔在本项目文件中的 tools文件中有修改三码的工具下载(点我进入)](tools/)
+
+### 1.通过 [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools/releases) 工具 打开 config文件后，进入到 PI 后，生成三码信息导入使用
+![三码设置](images/pi-code-info.png)
+
+### 2.使用 opencore configurator 修改三码信息也同样可以
+![occonfig](images/occonfig.png)
+
+### 3.通过 hackintool 工具也可以生成三码信息
+
+------------------------------------------------------
+
+# 3.更新记录
+
+## 2024-06-08 更新
+2024-06-08 更新说明
+1，增加多个网卡驱动，支持在不同系统下均能使用无线网卡
+2，完善到opencore 1.0.0 版本
+3，改进显卡支持，仿冒6650xt与6690xt由用户自行购选
+4，增加多个调试和最新驱动工具
+
+## 2024-05-17 更新
 1. 原生本机Wifi，蓝牙支持
 2. 更新到opencore 1.0.0
 3. 支持最新 macOS 14.5版本
 4. EFI文件归类，不同系统根据分类使用
 5. 支持Apple DRM（支持无损格式，杜比）
 
-#### 2023-4-30 更新
+## 2023-4-30 更新
 1. 加入大小核心调度，能够正确识别大核，线程，小核，不会启动应用直接全部占用
    系统优先使用大核，其次小核，再线程
 1. 直接调用的主板自带因特尔网卡，支持Wi-Fi 6，不需要额外购买网卡
@@ -22,26 +116,16 @@
 7. 大小核补丁加入后，性能比未加入的要高很多
 8. 声音，麦克风正常使用
 
-##### 已知问题：
+------------------------------------------------------
+
+# 4.已知问题
 ~~1. 自带蓝牙目前没有驱动 已解决~~
 
-2，不能随航（需要该功能可以买免驱动网卡，14已不支持直接免驱）
+2，不能随航（需要该功能可以买免驱动网卡，14已不支持原有博通直接免驱）
 
-# EFI文件说明
-    
-    macOS 12 - 13 版本： macOS-Ventura 目录
+------------------------------------------------------
 
-    macOS 14.1 - 14.3.1版本：macOS-Sonoma-14.3.1up 目录
-
-    macOS 14.4 - up 版本：macOS-Sonoma-14.4 目录
-
-#### 说明
-由于macOS14.4有相关变更，不能直接无痛升级
-需要将 Misc - Security - SecurityBootMode : Disabled
-
-无线网卡驱动也需要重新部署（目前制作的EFI已经可以直接使用）
-
-# macOS关于
+# 5.macOS关于
 <table>
     <tr>
         <td>
@@ -71,21 +155,12 @@
     </tr>
 </table>
 
-##### ⚠️应当避免使用的macOS版本
-1. macOS 14.4.1 ： [包含 Java 代码的某些应用程序会意外退出｜影响icoud｜生产力不推荐]
+------------------------------------------------------
 
-##### 🔝推荐的系统版本：
-1. Ventura 13.5.1(有小版本更新直接升级)
-2. Sonoma 14.3.1
-3. Sonoma 14.5
+# 6.相关资源
 
-##### ⏩如何升级：
-1. 小版本升级：可以直接在系统设置 直接更新
-2. 大版本升级 推荐：使用 pkg 对应版本的升级包升级
-3. 大版本升级：下载对应 dmg 系统包，打开以后有一个安装进行升级
+## 6.1.macOS升级包下载
 
-#### 🆓相关资源：
-##### 1.macOSpkg升级包
 * macOS Sonoma 14.5 (23F79) - 推荐版本
  
     链接: https://pan.baidu.com/s/1DQ9vFTQPSUv7Xg-wMDT6hg?pwd=4qxa 
@@ -102,80 +177,88 @@
 
     SHA256SUM：包内
 
-##### 2.macOSdmg安装包
+## 6.2.macOS 13.5.1 镜像包下载
+
 * macOS Venture 13.5.1 22G90 With opencore 0.9.4 and WinPE
 
     链接: https://pan.baidu.com/s/1rq-Q5e3-my8gZUX3oZS_Ng?pwd=rv49 
 
     提取码: rv49 
 
-# 主板型号
-TX GAMING B760M，EFI支持 ddr4/ddr5版本
+## 6.3.推荐使用的系统
 
-关键字：`华硕天选B760M黑苹果`，`TX B760m Hackintosh`，`TX GAMING B760M WIFI hackintosh`；
+1. Ventura 13.5.1(有小版本更新直接升级)
+2. Sonoma 14.3.1
+3. Sonoma 14.5
 
-<img src="images/tx-b760m.jpg" width=70%>
+## 6.4.避免使用的版本
 
-## opencore : 1.0.0v2 144无线蓝牙网卡版本
-![oc-1.0.0](images/oc14.5.png)
-## opencore : 0.9.9 版本
-![oc-0.9.9](images/oc099.png)
-## 支持系统：
-1. macOS Soname 14.4 -> 最新
-1. macOS Sonoma 14.0 -> 14.3.1
-2. macOS Ventura 13.0 -> 13.最新
-3. macOS Monterey 12.0 -> 12.最新
+1. macOS 14.4.1 ： [包含 Java 代码的某些应用程序会意外退出｜影响icoud｜生产力不推荐]
 
-# 使用教程：
-#### 通过 [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools/releases) 工具 打开 config文件后，进入到 PI 后，生成三码信息导入使用
-![三码设置](images/smi.png)
-#### 使用 opencore configurator 修改三码信息也同样可以
-![occonfig](images/occonfig.png)
-#### 通过 hackintool 工具也可以生成三码信息
+## 6.5.如何升级版本
 
-## bios设置
- 
-| Bios选项名          | 选项      | 必需 |
-|--------------------|----------|------|
-| VT-d               | Enabled  |      |
-| XHCI-Hand-Off      | Enabled  |      |
-| Above 4G Decoding  | Enabled  |      |
-| Fast Boot          | Disabled |      |
-| CSM                | Disabled |      |
-| Secure Boot        | Disabled |      |
-| Resize Bar Support | Enabled  |      |
+1. 小版本升级：可以直接在系统设置 直接更新
+2. 大版本升级 推荐：使用 pkg 对应版本的升级包升级
+3. 大版本升级：下载对应 dmg 系统包，打开以后有一个安装进行升级
 
+------------------------------------------------------
 
-## 其他
+# 7.展示的使用信息
 
 1. 主板自带网卡驱动信息
 因 Sonoma 14 以后，免驱动苹果网卡无法使用，且只支持Wi-Fi5，使用Wi-Fi 6 自带网卡速率更快
 ![Wi-Fi](images/Wi-Fi.png)
 内置无线网卡可以跑满 2400Mbps传输速率
 ![Wi-Fi-2](images/Wi-Fi-2.png)
-
-2. ACPI信息
-如果你是免驱动显卡，可以去掉 SSDT-RX6650XT-TXB760-PC00-PEG1.aml 文件
-如果你是仿冒显卡，不同型号，可以使用hackintosh工具中的pcie找到显卡路径
-![acpi](images/acpi.png)
-3. cpu核心能够正确识别成 16核心 24个线程（大核心，小核心，线程。其他处理器同样支持）
+2. cpu核心能够正确识别成 16核心 24个线程（大核心，小核心，线程。其他处理器同样支持）
 ![cpu-core](images/cpu-core.png)
 大小核处理器均能识别到正确的大小核并且调度
 ![cpu-core](images/p+e.png)
-4. 将 音乐 - 设置 - 播放，流播放：设置成无损
+
+3. 将 音乐 - 设置 - 播放，流播放：设置成无损
 出现无损标志：支持Apple DRM
 <img src="images/apple-drm.png" >
 
-5. 日常使用占用
+4. 日常使用占用
 双屏4k，播放影音以及日常办公使用
 <img src="images/used.png" >
 
-# 疑难解答
+-------------------------------
+
+# 8.其他
+
+1. opencore 1.0.0 支持多个版本的无线网卡驱动（通过内核版本控制驱动加载方式制作）
+![wifi-card](assets/wifi-card.png)
+
+macOS 14.4 内核起步版本：23.3.0 (因14.4无线网卡驱动需要另外部署)
+macOS 14.0 内核起步版本：23.0.0 
+macOS 13 内核起步版本：22.0.0
+macOS 12 内核起步版本：21.0.0
+
+2. ACPI信息，增加支持 `RX6650XT` 与 `TX6690XT` 显卡的仿冒支持
+![ssdt-info](assets/ssdt-info.png)
+默认是不启动仿冒显卡支持，如果你的显卡是 `RX6650XT` `TX6950XT`，请根据你的显卡进行购选启用（Enabled勾选即可）
+
+3. 版本验证 opencore 1.0.0
+![hackintosh-info](assets/hackintosh-info.png)
+
+4. 驱动加载情况
+ ![Drivers-info](assets/Drivers-info.png)
+ 
+5. 睡眠信息
+![sleep-info](assets/sleep-info.png)
+
+
+6. 保留仿冒显卡改名
+![dp-name](assets/dp-name.png)
+将第一个箭头的 # 号去掉以后，可以将Value的名称改成你需要的显卡名
+
+# 9.疑难解答
 ### 为什么里面参数的序列是反过来的，比如我们看到的 11 22 33，输入到系统要变成 33 22 11 ？
 这是因为目前主流的操作系统都采用: 小端模式
 > 参考：大端模式（big-endian）与小端模式（little-endian）
 
-# 鸣谢
+# 10.鸣谢
 1. [opencore](https://github.com/acidanthera/OpenCorePkg)
 2. [Acidanthera and all kext developer for hackintosh](https://github.com/acidanthera)
 3. [OCAuxiliaryTools](https://github.com/ic005k/OCAuxiliaryTools/releases)
