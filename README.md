@@ -7,7 +7,7 @@
 
 文档版本号：v1.0.0u01-d01
 
-EFI Release 下载 ：  [Github发行包下载](releases)
+EFI Release 下载 ：  [Github发行包下载](https://github.com/oldweek/ASUS-TX-B760m-hackintosh/releases)
 
 ------------------------------------------------------
 
